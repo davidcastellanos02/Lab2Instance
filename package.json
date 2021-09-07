@@ -1,0 +1,27 @@
+{
+  "name": "lab2instance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidcastellanos02/Lab2Instance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidcastellanos02/Lab2Instance/issues"
+  },
+  "homepage": "https://github.com/davidcastellanos02/Lab2Instance#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "form-data": "^4.0.0",
+    "jimp": "^0.16.1",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.12"
+  }
+}
