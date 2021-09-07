@@ -3,7 +3,7 @@ const app = express()
 const multer  = require('multer')
 const upload = multer({ storage: multer.memoryStorage() })
 const Jimp = require('jimp')
-const fetch = import('node-fetch')
+import fetch from 'node-fetch'
 
 app.get('/', (req, res) =>{
     res.sendFile(__dirname+'/src/index.html')
