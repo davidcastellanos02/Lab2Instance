@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="icon" href="/favicon.ico" sizes="any">-->
     <title>Image converter</title>
 </head>
-<body>
-    <h1 class="tittle">Modifica tu imagen</h1>
-    <form action="/stats" enctype="multipart/form-data" method="post">
-        <div class="form-group">
-          
-          <input type="file" class="form-control-file" name="uploaded_file">
-          <input type="submit" value="Get me the image!">            
+<body style="background-color:rgb(49, 48, 48)"> 
+     
+    <div style="padding: 50px;margin-left: 200px;align-self: center;"><h1 class="tittle" style="color:white;font-size: 48px;">MODIFICAR IMAGEN</h1></div>
+    <form action="/process" enctype="multipart/form-data" method="post">
+        <div class="form-group" style="background-color: white;align-self: center;padding: 100px;margin-left: 250px;margin-right: 250px;">
+        <input type="file" class="form-control-file"  name="uploaded_file" style="margin: 20px;display: block;border-radius: 0px;border-width: 0px;">
+        <input type="submit" value="PROCESAR" style="background-color: darkgrey; display: block;margin: 20px;border-radius: 0px;border-width: 0px;height: 55px;width: 120px;font-size: 18px;">            
+        
         </div>
       </form>
     

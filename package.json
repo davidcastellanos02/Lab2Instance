@@ -19,10 +19,8 @@
   "homepage": "https://github.com/davidcastellanos02/Lab2Instance#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "form-data": "^4.0.0",
     "jimp": "^0.16.1",
     "multer": "^1.4.3",
-    "node-fetch": "^3.0.0",
-    "nodemon": "^2.0.12"
+    "node-fetch": "^3.0.0"
   }
 }
