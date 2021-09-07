@@ -1,4 +1,5 @@
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+//const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+import fetch from 'node-fetch'
 const express = require('express')
 const app = express()
 const multer  = require('multer')
@@ -6,15 +7,15 @@ const upload = multer({ storage: multer.memoryStorage() })
 const Jimp = require('jimp');
 
 app.get('/', (req, res) =>{
-    res.sendFile(__dirname+'/uploads/result.jpg')
+    res.sendFile(__dirname+'/src/index.html')
 })
 
 app.post('/process', upload.single('uploaded_file'), function (req, res, next) {
     try{
     process(req.file.buffer)
-    res.sendFile(__dirname+'/src/result.html')
+    res.sendFile(__dirname+'/uploads/result.jpg')
     }catch(err){
-        
+
     }
 })
 
